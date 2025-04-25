@@ -27,7 +27,7 @@
             --background-color: #F5FFFA; /* Light green tint */
             --text-color: #333;
             --accent-color: #FF8C00; /* Orange */
-            --max-width: 800px; /* Maximum width for the content */
+           /* --max-width: 1400px;  Maximum width for the content */
         }
         
         body {
@@ -50,14 +50,21 @@
             margin: 0 auto;
         }
         
-        .hero-image {
-            width: 100%;
-            max-height: 500px;
-            overflow: hidden;
-            position: relative;
+        .hero-section {
             display: flex;
-            justify-content: center;
+            flex-direction: row;
             align-items: center;
+            background-color: rgba(75, 0, 130, 0.8); /* Indigo with opacity */
+            color: white;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        
+        .hero-image {
+            width: 40%;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
         }
         
         .hero-image img {
@@ -65,17 +72,11 @@
             height: auto;
             display: block;
             object-fit: cover;
-            object-position: center;
-            max-width: var(--max-width);
         }
         
         .hero-text {
-            background-color: rgba(75, 0, 130, 0.8); /* Indigo with opacity */
-            color: white;
+            width: 60%;
             padding: 2rem;
-            margin-top: -5px;
-            width: 100%;
-            max-width: var(--max-width);
             box-sizing: border-box;
         }
         
@@ -266,23 +267,38 @@
             .features {
                 grid-template-columns: 1fr;
             }
+            
+            .hero-section {
+                flex-direction: column;
+            }
+            
+            .hero-image, .hero-text {
+                width: 100%;
+            }
+            
+            .hero-image img {
+                max-height: 300px;
+                object-position: center top;
+            }
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <div class="hero-image">
-                <img src="/officiant.png" alt="Wedding Officiant in white robes smiling with book" style="max-width: 100%; height: auto; object-fit: cover;">
-            </div>
-            <div class="hero-text">
-                <div class="logo">
-                    <div class="logo-text">CuISCA</div>
-                    <div class="organization-name">Copper Island Shifting Currents Alliance</div>
-                    <div class="officiant-name">Keweenaw Wedding Ceremonies</div>
+            <div class="hero-section">
+                <div class="hero-image">
+                    <img src="/officiant.png" alt="Wedding Officiant in white robes smiling with book">
                 </div>
-                <p class="tagline">Sacred moments for your Keweenaw wedding journey</p>
-                <a href="#contact" class="btn">Begin Your Journey</a>
+                <div class="hero-text">
+                    <div class="logo">
+                        <div class="logo-text">CuISCA</div>
+                        <div class="organization-name">Copper Island Shifting Currents Alliance</div>
+                        <div class="officiant-name">Keweenaw Wedding Ceremonies</div>
+                    </div>
+                    <p class="tagline">Sacred moments for your Keweenaw wedding journey</p>
+                    <a href="#contact" class="btn">Begin Your Journey</a>
+                </div>
             </div>
         </header>
         
@@ -344,7 +360,9 @@
         <p>Creating sacred ceremony spaces throughout Michigan's Keweenaw Peninsula</p>
         <p>Serving Houghton, Hancock, Calumet, Copper Harbor, Eagle Harbor, Lake Linden, and surrounding areas</p>
         <p>© 2025 CuISCA | Licensed in the State of Michigan</p>
-        <p><a href="/movement"></a></p>
+        <div class="contact-email">
+                <a href="/movement" class="btn">The CuISCA MovementA</a>
+            </div>
     </footer>
 </body>
 </html>
