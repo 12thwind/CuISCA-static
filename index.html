@@ -1,368 +1,255 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CuISCA | Copper Island Shifting Currents Alliance | Keweenaw Wedding Officiant</title>
-    <!-- SEO Tags -->
-    <meta name="description" content="CuISCA: Copper Island Shifting Currents Alliance offering meaningful wedding ceremonies in Michigan's Keweenaw Peninsula. Sacred, personalized ceremonies honoring all spiritual paths.">
-    <meta name="keywords" content="wedding officiant, Keweenaw Peninsula, Michigan wedding, spiritual ceremony, sacred vows, CuISCA, Copper Island Shifting Currents Alliance, Houghton, Hancock, Calumet, Copper Harbor, Lake Superior, custom ceremonies">
-    <meta name="author" content="CuISCA">
-    <meta property="og:title" content="CuISCA | Keweenaw Wedding Officiant">
-    <meta property="og:description" content="Sacred wedding ceremonies that honor your unique connection in Michigan's Keweenaw Peninsula by the Copper Island Shifting Currents Alliance.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cuisca.org">
-    <meta property="og:image" content="https://cuisca.org/officiant.png">
-    <meta property="og:locale" content="en_US">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="CuISCA | Keweenaw Wedding Officiant">
-    <meta name="twitter:description" content="Sacred wedding ceremonies that honor your unique connection in Michigan's Keweenaw Peninsula by the Copper Island Shifting Currents Alliance.">
-    <meta name="twitter:image" content="https://cuisca.org/officiant.png">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://cuisca.org">
-    <style>
-        :root {
-            --primary-color: #4B0082;  /* Indigo */
-            --secondary-color: #8A2BE2; /* Violet */
-            --background-color: #F5FFFA; /* Light green tint */
-            --text-color: #333;
-            --accent-color: #FF8C00; /* Orange */
-           /* --max-width: 1400px;  Maximum width for the content */
-        }
-        
-        body {
-            font-family: 'Merriweather', serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            text-align: center;
-            padding: 0;
-            position: relative;
-            overflow: hidden;
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-        
-        .hero-section {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            background-color: rgba(75, 0, 130, 0.8); /* Indigo with opacity */
-            color: white;
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-        
-        .hero-image {
-            width: 40%;
-            flex-shrink: 0;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-        }
-        
-        .hero-text {
-            width: 60%;
-            padding: 2rem;
-            box-sizing: border-box;
-        }
-        
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            color: var(--primary-color);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-            color: var(--accent-color);
-        }
-        
-        .tagline {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        
-        .organization-name {
-            font-style: italic;
-            font-size: 1.2rem;
-            margin-top: -0.5rem;
-            margin-bottom: 1.5rem;
-            color: rgba(255, 255, 255, 0.9);
-        }
-        
-        .container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 2rem;
-            box-sizing: border-box;
-        }
-        
-        .section {
-            margin-bottom: 4rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s;
-            margin-top: 1rem;
-        }
-        
-        .btn:hover {
-            background-color: var(--primary-color);
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .feature-card {
-            background-color: white;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .contact-email {
-            text-align: center;
-            background-color: white;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .email-note {
-            margin-top: 1rem;
-            font-size: 1.1rem;
-        }
-        
-        .email-note a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        .email-note a:hover {
-            color: var(--secondary-color);
-            text-decoration: underline;
-        }
-        
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-            max-width: var(--max-width);
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-        
-        .social-icon {
-            width: 40px;
-            height: 40px;
-            background-color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .logo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        
-        .logo-text {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.2rem;
-        }
-        
-        .officiant-name {
-            font-size: 1.4rem;
-            font-weight: 400;
-            color: rgba(255, 255, 255, 0.9);
-        }
-        
-        .rainbow-wave-divider {
-            height: 50px;
-            width: 100%;
-            position: relative;
-            margin-top: -1px;
-            z-index: 1;
-            max-width: var(--max-width);
-            margin-left: auto;
-            margin-right: auto;
-            background: linear-gradient(
-                to bottom,
-                rgba(0, 0, 0, 0) 0%,
-                rgba(0, 0, 0, 0) 75%,
-                var(--background-color) 100%
-            ),
-            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='rainbow' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%23ff0000'/%3E%3Cstop offset='16.6%25' stop-color='%23ff9900'/%3E%3Cstop offset='33.3%25' stop-color='%23ffff00'/%3E%3Cstop offset='50%25' stop-color='%2300ff00'/%3E%3Cstop offset='66.6%25' stop-color='%230099ff'/%3E%3Cstop offset='83.3%25' stop-color='%236633ff'/%3E%3Cstop offset='100%25' stop-color='%23ff00ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='url(%23rainbow)'%3E%3C/path%3E%3Cpath d='M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z' fill='url(%23rainbow)' opacity='0.6'%3E%3C/path%3E%3Cpath d='M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z' fill='url(%23rainbow)' opacity='0.9'%3E%3C/path%3E%3C/svg%3E");
-            background-size: cover;
-        }
-        
-        .wrapper {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            
-            .tagline {
-                font-size: 1.2rem;
-            }
-            
-            .features {
-                grid-template-columns: 1fr;
-            }
-            
-            .hero-section {
-                flex-direction: column;
-            }
-            
-            .hero-image, .hero-text {
-                width: 100%;
-            }
-            
-            .hero-image img {
-                max-height: 300px;
-                object-position: center top;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <div class="hero-section">
-                <div class="hero-image">
-                    <img src="/officiant.png" alt="Wedding Officiant in white robes smiling with book">
-                </div>
-                <div class="hero-text">
-                    <div class="logo">
-                        <div class="logo-text">CuISCA</div>
-                        <div class="organization-name">Copper Island Shifting Currents Alliance</div>
-                        <div class="officiant-name">Keweenaw Wedding Ceremonies</div>
-                    </div>
-                    <p class="tagline">Sacred moments for your Keweenaw wedding journey</p>
-                    <a href="#contact" class="btn">Begin Your Journey</a>
-                </div>
-            </div>
-        </header>
-        
-        <div class="rainbow-wave-divider"></div>
-    </div>
-    
-    <div class="container">
-        <section class="section">
-            <h2>Your Keweenaw Wedding Ceremony Guide</h2>
-            <p>Welcome to a space of intention and presence. At CuISCA, we're dedicated to creating ceremonies that transcend the ordinary, honoring the sacred commitment you're making amid the powerful landscapes of Michigan's Keweenaw Peninsula. From the ancient shores of Lake Superior to the timeless copper country venues, we help couples craft ceremonies that reflect the depth and authenticity of their unique journey together.</p>
-            <p>As your ceremony guide, we create a container for meaningful moments that resonate with your authentic selves. We honor all spiritual paths, personal beliefs, and cultural traditions, weaving them thoughtfully into ceremonies that feel true to your essence as individuals and as a couple.</p>
-            <p>We come to you wherever you choose to mark this threshold moment—whether it's beneath ancient trees, beside healing waters, on family land rich with history, or in a space that simply speaks to your hearts. The Keweenaw Peninsula offers countless sacred settings, and we're honored to help create a ceremony that connects deeply with both you and the land where you choose to exchange your vows.</p>
-        </section>
-        
-        <section class="section">
-            <h2>Our Philosophy</h2>
-            <div class="features">
-                <div class="feature-card">
-                    <h3>Ceremonies of Intention</h3>
-                    <p>Every word, ritual, and moment is chosen with purpose. Your ceremony isn't a performance but a conscious threshold-crossing, marking your transition with awareness and authenticity. We create space for the profound significance of your commitment to unfold in ways that honor your unique journey.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Connection to Place</h3>
-                    <p>The Keweenaw Peninsula carries its own ancient wisdom and energy. As stewards of this land, we help couples integrate the spirit of place into their ceremonies—whether through acknowledging the elements, honoring the waters of Lake Superior, or connecting with the timeless presence of the peninsula's forests and hills.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Inclusive Sacred Space</h3>
-                    <p>We create ceremonial containers that honor all paths and traditions. Whether you're drawn to earth-centered spirituality, universal teachings, mindfulness practices, or elements from various wisdom traditions, we craft ceremonies that respect diverse spiritual journeys and create space for authentic connection and presence.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="section">
-            <h2>The Ceremony Journey</h2>
-            <h3>Sacred Preparation</h3>
-            <p>We begin with a heart-centered conversation about your relationship, values, and vision for your ceremony. This is more than planning—it's a ritual of intention-setting that helps clarify what matters most to you. We'll craft a ceremony framework that resonates with your authentic selves, revising thoughtfully until it feels aligned with your deepest intentions.</p>
-            
-            <h3>The Threshold Moment</h3>
-            <p>On your ceremony day, we arrive early to ground ourselves in your chosen space, connecting with the energy of the land and the moment. We create a container of presence and reverence as we guide you and your witnesses through this meaningful transition. The ceremony becomes a bridge between your past and future, held with care and authenticity.</p>
-            
-            <h3>Integration</h3>
-            <p>After your ceremony, we attend to the practical aspects of filing your marriage license with mindful attention, ensuring this legal recognition is completed with the same care as your ceremony. We also provide you with a keepsake copy of your ceremony text as a touchstone for reflection throughout your journey together.</p>
-        </section>
-        
-        <section class="section" id="contact">
-            <h2>Begin Your Ceremony Journey</h2>
-            <p>Ready to explore creating a meaningful ceremony that honors your unique connection? Reach out to begin our conversation about your vision for your special day.</p>
-            
-            <div class="contact-email">
-                <a href="mailto:adam@cuisca.org" class="btn">Contact CuISCA</a>
-                <p class="email-note">Or email directly: <a href="mailto:adam@cuisca.org">adam@cuisca.org</a></p>
-            </div>
-        </section>
-    </div>
-    
-    <footer>
-        <p>CuISCA</p>
-        <p>Copper Island Shifting Currents Alliance</p>
-        <p>Creating sacred ceremony spaces throughout Michigan's Keweenaw Peninsula</p>
-        <p>Serving Houghton, Hancock, Calumet, Copper Harbor, Eagle Harbor, Lake Linden, and surrounding areas</p>
-        <p>© 2025 CuISCA | Licensed in the State of Michigan</p>
-        <div class="contact-email">
-                <a href="/movement" class="btn">The CuISCA Movement</a>
-            </div>
-    </footer>
-</body>
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CuISCA - Copper Island Shifting Currents Aliance</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>CuISCA</strong> <span>Copper Island Shifting Currents Aliance</span></a>
+						<!--<nav>
+							<a href="#menu">Menu</a>
+						</nav>-->
+					</header>
+
+				<!-- Menu 
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Landing</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>-->
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>CuISCA<br>Copper Island Shifting Currents Aliance</h1>
+							</header>
+							<div class="content">
+								<p>Sacred moments for your Keweenaw wedding journey</p>
+								<ul class="actions">
+							<!--	<li><a href="#one" class="button next scrolly">Get Started</a></li> -->
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+
+				<!-- One -->
+				<section id="two">
+					<div class="inner">
+						<header class="major">
+							<h2>Your Keweenaw Wedding Ceremony Guide</h2>
+						</header>
+						<p>Welcome to a space of intention and presence. CuISCA is dedicated to creating ceremonies that transcend the ordinary, 
+							honoring the sacred commitment you're making amid the powerful landscapes of Michigan's Keweenaw Peninsula. From the ancient 
+							shores of Lake Superior to all the timeless copper country venues, I help couples craft ceremonies that reflect the depth and 
+							authenticity of their unique journey together.
+
+						<p>As your ceremony guide, I create a container for meaningful moments that resonate with your authentic selves. I honor all 
+							spiritual paths, personal beliefs, and cultural traditions, weaving them thoughtfully into ceremonies that feel true to your 
+							essence as individuals and as a couple.
+							
+						<p>I come to you wherever you choose to mark this threshold moment—whether it's beneath ancient trees, beside healing waters, 
+							on family land rich with history, or in a space that simply speaks to your hearts. The Keweenaw Peninsula offers countless 
+							sacred settings, and I'm honored to help create a ceremony that connects deeply with both you and the land where you choose 
+							to exchange your vows.</p>
+						<ul class="actions">
+							<!-- <li><a href="landing.html" class="button next">Get Started</a></li> -->
+						</ul>
+					</div>
+				</section>
+
+
+						<!-- Two -->
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="pic01.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Ceremonies of Intention</h3>
+										<p>Every word, ritual, and moment is chosen with purpose. Your ceremony isn't a performance but a conscious 
+											threshold-crossing, marking your transition with awareness and authenticity. We create space for the profound 
+											significance of your commitment to unfold in ways that honor your unique journey.</p>
+									</header>
+								</article>
+
+
+								<article>
+									<span class="image">
+										<img src="pic02.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Connection to Place</h3>
+										<p>The Keweenaw Peninsula carries its own ancient wisdom and energy. As stewards of this land, we help couples 
+											integrate the spirit of place into their ceremonies—whether through acknowledging the elements, honoring the 
+											waters of Lake Superior, or connecting with the timeless presence of the peninsula's forests and hills.</p>
+									</header>
+								</article>
+
+
+								<article>
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Inclusive Sacred Space</h3>
+										<p>We create ceremonial containers that honor all paths and traditions. Whether you're drawn to earth-centered 
+											spirituality, universal teachings, mindfulness practices, or elements from various wisdom traditions, we craft 
+											ceremonies that respect diverse spiritual journeys and create space for authentic connection and presence.</p>
+									</header>
+								</article>
+
+
+								<article>
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Sacred Preparation</a></h3>
+										<p>We begin with a heart-centered conversation about your relationship, values, and vision for your ceremony. 
+											This is more than planning—it's a ritual of intention-setting that helps clarify what matters most to you. 
+											We'll craft a ceremony framework that resonates with your authentic selves, revising thoughtfully until it 
+											feels aligned with your deepest intentions.</p>
+									</header>
+								</article>
+
+
+								<article>
+									<span class="image">
+										<img src="pic05.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>The Threshold Moment</h3>
+										<p>On your ceremony day, we arrive early to ground ourselves in your chosen space, connecting with the energy 
+											of the land and the moment. We create a container of presence and reverence as we guide you and your witnesses 
+											through this meaningful transition. The ceremony becomes a bridge between your past and future, held with care 
+											and authenticity.</p>
+									</header>
+								</article>
+
+
+								<article>
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Integration</h3>
+										<p>After your ceremony, we attend to the practical aspects of filing your marriage license with mindful attention, 
+											ensuring this legal recognition is completed with the same care as your ceremony. We also provide you with a 
+											keepsake copy of your ceremony text as a touchstone for reflection throughout your journey together.</p>
+									</header>
+								</article>
+							</section>
+
+						
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">adam@cuisca.org</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(906) 442-2321</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>
+										Hancock, MI 49930<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!--<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						-->
+							<ul class="copyright">
+								<li>&copy; CuISCA 2025</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
