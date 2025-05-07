@@ -225,7 +225,7 @@
 								</header>
 								<p>Questions, comments, or ready to connect? Send us a message and we'll get back to you promptly.</p>
 								
-								<form method="post" action="#">
+								<form method="post" id="contact-form">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -306,6 +306,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/form-handler.js"></script>
+			<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    // Replace "YOUR_PUBLIC_KEY" with your actual EmailJS public key
+    emailjs.init('0Lon4w_r_xAG9nog5');
+  })();
+</script>
 	</body>
 </html>

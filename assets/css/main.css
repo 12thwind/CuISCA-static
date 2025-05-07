@@ -7,6 +7,26 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+  .success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+  }
+  
+  .error-message {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+  }
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
