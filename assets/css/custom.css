@@ -70,6 +70,23 @@ a { color: var(--accent); }
 .alt-bg { background: var(--bg-alt); }
 .dark-bg { background: var(--dark); }
 
+.btn-outline {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.65rem 1.75rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: var(--dark);
+}
+
 /* ── Hero ─────────────────────────────────────────── */
 #hero {
   min-height: 100vh;
@@ -100,20 +117,3 @@ a { color: var(--accent); }
 }
 
 #hero .eyebrow { color: var(--accent); }
-
-.btn-outline {
-  display: inline-block;
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  padding: 0.65rem 1.75rem;
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-}
-
-.btn-outline:hover {
-  background: var(--accent);
-  color: var(--dark);
-}
