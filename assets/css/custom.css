@@ -349,3 +349,37 @@ footer {
   font-size: 0.75rem;
   letter-spacing: 0.05em;
 }
+
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Nav — hide text links on mobile, keep logo + CTA */
+  .nav-links { display: none; }
+  #site-nav { padding: 0 1rem; }
+
+  /* Ceremonies */
+  .ceremonies-intro {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .officiant-photo {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .approach-cards { grid-template-columns: 1fr; }
+
+  /* Philosophy */
+  .principles-grid { grid-template-columns: 1fr; }
+
+  /* Elements */
+  .elements-grid { grid-template-columns: 1fr; }
+
+  /* Container padding */
+  .container { padding: 3.5rem 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  #hero h1 { font-size: clamp(2.5rem, 14vw, 4rem); }
+  .hero-tagline { font-size: 0.95rem; }
+  .section-heading { font-size: 1.6rem; }
+}
