@@ -253,3 +253,57 @@ a { color: var(--accent); }
   line-height: 1.8;
   margin-top: 2.5rem;
 }
+
+/* ── Ceremony Elements ────────────────────────────── */
+#elements { background: var(--bg); }
+
+.elements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.element h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--accent);
+  color: var(--dark);
+}
+
+.element ul {
+  list-style: none;
+  padding: 0;
+}
+
+.element li {
+  padding: 0.35rem 0 0.35rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text);
+  position: relative;
+  border-bottom: 1px solid rgba(180,160,130,0.2);
+}
+
+.element li:last-child { border-bottom: none; }
+
+.element li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.inclusive-box {
+  background: var(--bg-alt);
+  border: 1px solid #ddd0c0;
+  padding: 1.75rem 2rem;
+  border-radius: 2px;
+}
+
+.inclusive-box h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
