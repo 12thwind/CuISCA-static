@@ -2,6 +2,7 @@
 (function () {
   var nav  = document.getElementById('site-nav');
   var hero = document.getElementById('hero');
+  if (!nav || !hero) return;
 
   var observer = new IntersectionObserver(
     function (entries) {
