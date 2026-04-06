@@ -311,6 +311,12 @@ a { color: var(--accent); }
 /* ── Contact ──────────────────────────────────────── */
 #contact { background: var(--dark); }
 
+#contact .container {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .contact-eyebrow { color: var(--accent); }
 
 .contact-heading {
@@ -382,4 +388,10 @@ footer {
   #hero h1 { font-size: clamp(2.5rem, 14vw, 4rem); }
   .hero-tagline { font-size: 0.95rem; }
   .section-heading { font-size: 1.6rem; }
+}
+
+/* ── Selection ────────────────────────────────────── */
+::selection {
+  background: var(--accent);
+  color: var(--dark);
 }
