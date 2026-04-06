@@ -307,3 +307,45 @@ a { color: var(--accent); }
   font-size: 1rem;
   margin-bottom: 0.75rem;
 }
+
+/* ── Contact ──────────────────────────────────────── */
+#contact { background: var(--dark); }
+
+.contact-eyebrow { color: var(--accent); }
+
+.contact-heading {
+  color: var(--bg);
+  margin-bottom: 1rem;
+}
+
+.contact-sub {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.email-link {
+  display: inline-block;
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 1.15rem;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.15rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.email-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ── Footer ───────────────────────────────────────── */
+footer {
+  background: var(--dark-deep);
+  padding: 1.25rem 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
