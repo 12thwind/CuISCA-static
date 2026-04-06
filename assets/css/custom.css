@@ -117,3 +117,69 @@ a { color: var(--accent); }
 }
 
 #hero .eyebrow { color: var(--accent); }
+
+/* ── Sticky Nav ───────────────────────────────────── */
+#site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 3.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+#site-nav.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-logo {
+  color: var(--accent);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--bg); }
+
+.nav-cta {
+  background: var(--accent);
+  color: var(--dark);
+  padding: 0.4rem 1.1rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.nav-cta:hover { background: #dbb97e; }
