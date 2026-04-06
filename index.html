@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CuISCA | Copper Island Shifting Currents Alliance</title>
   <meta name="description" content="CuISCA: Copper Island Shifting Currents Alliance — wedding ceremonies and living philosophy in Michigan's Keweenaw Peninsula, officiated by Rev. Adam Griffis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 <body>
@@ -19,7 +22,20 @@
       <li><a href="#contact">Connect</a></li>
     </ul>
     <a href="#contact" class="nav-cta">Begin Your Journey</a>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+
+  <!-- Mobile nav drawer -->
+  <div class="nav-drawer" aria-hidden="true">
+    <ul>
+      <li><a href="#ceremonies">Ceremonies</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#elements">Elements</a></li>
+      <li><a href="#contact">Connect</a></li>
+    </ul>
+  </div>
 
   <!-- Hero -->
   <section id="hero">
@@ -29,6 +45,7 @@
       <p class="hero-tagline">Honoring the sacred connections between spirit, community, and place in Michigan's Keweenaw Peninsula</p>
       <a href="#ceremonies" class="btn-outline">Discover Our Path</a>
     </div>
+    <div class="hero-scroll" aria-hidden="true">scroll</div>
   </section>
 
   <!-- Ceremonies -->
@@ -167,5 +184,6 @@
   </footer>
 
   <script src="assets/js/nav.js"></script>
+  <script src="assets/js/scroll-animations.js"></script>
 </body>
 </html>
